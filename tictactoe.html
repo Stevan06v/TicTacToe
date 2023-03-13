@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>TicTacToe</title>
+        <link rel="stylesheet" href="tictactoe.css">
+        <script src="./script.js" defer></script>
+    </head>
+
+    <body>
+
+        <div class="headline">
+            <h1 id="tic">Tic</h1>
+            <h1 id="tac">Tac</h1>
+            <h1 id="toe">Toe</h1>
+            <h1 id="marker">|</h1>
+        </div>
+
+        <div id="destroyInput">
+            <div style="display: flex; justify-content: center;gap: 1vw;">
+                <div>
+                    <h1 style="color:#c0a425;">Name One: </h1>
+                    <input type="text" id="nameOne">
+                    </div>
+        
+                    <div>
+                        <h1 style="color:#c0a425;">Name Two: </h1>
+                        <input type="text" id="nameTwo">
+                    </div>
+            </div>
+         <div style="display: flex; justify-content: center;margin-top: 1vw; gap: 1vw;">
+            <input type="color"  id="clrOne">
+            <input type="color"  id="clrTwo">
+         </div>
+
+         <center>
+             <h1 style="color:#c0a425;">Pick a gameboard-color!</h1>
+             <input type="color" id="clrGameBoard">
+         </center>
+
+            <center>
+         <select name="Bg" id="getBg">
+            <option value="animatedStars.gif">Animated Star Background</option>
+            <option value="galaxyDecent.png">Solid Galaxy Background</option>
+            <option value="galaxyAnimated.gif">Animated Galaxy Background</option>
+            <option value="clouds.png">Solid Clouds Background</option>
+            <option value="forest.jpg">Solid Forest Background</option>
+          </select>
+          </center>
+          <center> <h2 id="start" onclick="settings()">Start</h2></center>
+           
+        </div>
+
+        <div id="hidden">
+        <div id="game-board">
+            <div class="box" id="box1"  onclick="getUserInput(0,0,'box1')"></div>
+            <div class="box" id="box2"  onclick="getUserInput(0,1,'box2')"></div>
+            <div class="box" id="box3"  onclick="getUserInput(0,2,'box3')"></div>
+            <div class="box" id="box4"  onclick="getUserInput(1,0,'box4')"></div>
+            <div class="box" id="box5"  onclick="getUserInput(1,1,'box5')"></div>
+            <div class="box" id="box6"  onclick="getUserInput(1,2,'box6')"></div>
+            <div class="box" id="box7"  onclick="getUserInput(2,0,'box7')"></div>
+            <div class="box" id="box8"  onclick="getUserInput(2,1,'box8')"></div>
+            <div class="box" id="box9"  onclick="getUserInput(2,2,'box9')"></div>
+        </div>
+
+        <center>
+        <h1 id="winner"></h1>
+        <div style="display: flex; justify-content: center;gap: 1.5vw; margin-top: -1vw;">
+            <h2 id="skip" onclick="skip()">Skip</h2>
+            <h2 id="reset" onclick="resetGame()">New game</h2>
+            <h2 id="stats" onclick="showStats() ">ShowStats</h2>
+        </div>
+        
+        </center>
+    </div>
+
+
+
+
+
+
+    <!-- Finish-->
+    <div id="hideStats">
+        <center><h1>Stats</h1></center>
+    <div id="showStats">
+        <div id="grid">
+            <div style="color: #c0a425;" >
+                <h3>Stats</h3>
+                <h3>Names:</h3>
+                <h3>Rounds Won: </h3>
+                <h3>Picked Color: </h3>
+                
+            </div>
+            <div>
+                <h3  id="">Player One</h3>
+                <div id="statsOne"></div>
+            </div>
+            <div>
+                <h3  id="">Player Two</h3>
+                <div id="statsTwo"></div>
+            </div>
+        </div>
+    </div>
+    <center><h2 onclick="resetStats()" id="resetStats"">resetStats</h2></center>
+</div>
+    
+    
+
+
+    </body>
+</html>

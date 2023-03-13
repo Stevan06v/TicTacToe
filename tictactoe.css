@@ -1,0 +1,213 @@
+@font-face {
+    font-family: retro;
+    src: url(./INVASION2000.TTF);
+}
+body{
+    margin: 0;
+    padding: 0;
+    font-family: retro;
+    color: #ffffff;
+    background-color: #000000;
+    background-image: url(./imgs/animatedStars.gif);
+}
+h1 {
+    text-align: center;
+    margin-bottom: 2%;
+}
+#getBg{
+    font-family: retro;
+    font-size: 1.3rem;
+    background-color:#000000;
+    color:#c0a425;
+    border:#5d68d1 solid 3px;
+    border-radius: 10px;
+    margin-top: 2vw;
+    padding:  .3vw .3vw .3vw .3vw;
+}
+#game-board {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-left: 20%;
+    margin-right: 20%;    
+    gap:1vw;
+}
+
+#skip{
+    padding: 1vw 1vw 1vw 1vw;
+    border: 5px solid transparent;
+    width: min-content;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    transition: border .5s ease-in-out;
+}
+#skip:hover{
+    padding: 1vw 1vw 1vw 1vw;
+    color: #5d68d1;
+    border: 5px #5d68d1 solid;
+}
+#start{
+    padding: 1vw 1vw 1vw 1vw;
+    border: 5px solid transparent;
+    width: max-content;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    transition: border .5s ease-in-out;
+    cursor: pointer;
+}
+#start:hover{
+    padding: 1vw 1vw 1vw 1vw;
+    color: #5d68d1;
+    border: 5px #5d68d1 solid;
+}
+
+.box {
+    background: transparent;
+    border: 3px solid #dd3333;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: blue;
+    height: 10vw;
+}
+#marker{
+    font-size: 5.5rem;
+    margin-top: 60px;
+}
+.headline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.7rem;
+}
+#clrGameBoard{
+    width: 30%;
+}
+#tic{
+    background: -webkit-linear-gradient(#e76464,#dd3333,rgb(224, 23, 23));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.5rem;
+}
+#tac{
+font-size: 5.5rem;
+background: -webkit-linear-gradient(#2f40d6,#5d68d1,#0011ff);
+-webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+#toe{
+    background: -webkit-linear-gradient(yellow,#c0a425,#ffa600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 5.5rem;
+}
+.box{
+    font-size: 5rem;
+}
+.color{
+background-color: red;
+}
+#reset{
+    padding: 1vw 1vw 1vw 1vw;
+    border: 5px solid transparent;
+    width: max-content;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    transition: border .5s ease-in-out;
+    cursor: pointer;
+}
+#reset:hover{
+    padding: 1vw 1vw 1vw 1vw;
+    color: #e76464;
+    border: 5px #e76464 solid;
+}
+#nameOne{
+    font-family: retro;
+    background: -webkit-linear-gradient(yellow,#c0a425,#ffa600);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 3px #5d68d1 solid;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+#nameOne:focus{
+   border-color:#0011ff;
+}
+#nameTwo:focus{
+    border-color:#0011ff;
+ }
+
+#stats{
+    padding: 1vw 1vw 1vw 1vw;
+    border: 5px solid transparent;
+    width: max-content;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    transition: border .5s ease-in-out;
+    cursor: pointer;
+}
+#stats:hover{
+    padding: 1vw 1vw 1vw 1vw;
+    color:#c0a425;
+    border: 5px #c0a425 solid;
+}
+#grid{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    width: fit-content;
+    background-color: rgba(0, 0, 0, 0.438);
+    border: #5d68d1 5px solid;
+    border-radius: 15px;
+    padding:2vw 2vw 2vw 2vw;
+    gap: 3vw;
+}
+#showStats{
+  
+    display: flex;
+    justify-content: center;
+}
+#nameTwo{
+    font-family: retro;
+    background: -webkit-linear-gradient(#e76464,#dd3333,#e01717);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-color: transparent;
+    font-size: 1.5rem;
+    border: 3px#5d68d1 solid;
+    border-radius: 15px;
+    text-align: center;
+    padding-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+
+#resetStats{
+    padding: 1vw 1vw 1vw 1vw;
+    border: 5px solid transparent;
+    width: max-content;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: color .5s ease-in-out;
+    transition: border .5s ease-in-out;
+    cursor: pointer;
+}
+#resetStats:hover{
+    padding: 1vw 1vw 1vw 1vw;
+    color: #c0a425;
+    border: 5px #5d68d1 solid;
+}
+#clrOne{
+    width: 15%;
+}
+#clrTwo{
+    width:15%;
+}
